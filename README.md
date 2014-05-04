@@ -9,4 +9,4 @@ It was used by classmates to look up the homework assignments w/o having to ask 
 
 Different groups of students have different secondary subjects.
 The app allows users to switch between different subjects and 
-remembers their choise in local storage.
+remembers their choice in local storage.
