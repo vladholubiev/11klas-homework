@@ -1,0 +1,68 @@
+* {
+  font-family: Arial;
+}
+table {
+	border-collapse: collapse;
+	float: left;
+	font-size: 14px; 
+}
+td {
+	border: 1px solid lightgrey;
+}
+/*Заголовки таблиці*/
+tr:first-child {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+/*Номери уроку*/
+td:nth-child(1), td:nth-child(4) {
+  font-weight: bold;
+  padding: 1px 5px;
+  background-color: #eaf2ff;
+  font-size: 12px; 
+}
+/*Назви уроку*/
+td:nth-child(2), td:nth-child(5) {
+  padding: 1px 7px;
+}
+/*Мінімальна ширина "завдання додому"*/
+td:nth-child(3), td:nth-child(6) {
+	width: 430px;
+}
+/*Назви тижня*/
+tr:nth-child(2), tr:nth-child(11), tr:nth-child(20) {
+  background-color: #fbffd8;
+  font-weight: bold;
+}
+/*Ширина "предмет"*/
+td:nth-child(2), td:nth-child(5) {
+	width: 110px;
+}
+/*Виправлення помилок*/
+td.white_cell {
+  background-color: #fff;
+}
+td.yellow_cell {
+  background-color: #fbffd8;
+}
+td.settings_is {
+  background-color: lightgrey;
+}
+/*Налаштування*/
+select {
+  cursor: pointer;
+  width: 145px;
+}
+#sett {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+td:last-child {
+  border: none;
+  background-color: #fff;
+  padding-left: 50px;
+}

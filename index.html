@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/settings.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta charset=utf-8 />
+<title>11-А ДЗ</title>
+ <meta charset="utf-8">
+</head>
+<body>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script><!--/LiveInternet-->
+  <table border="0" cellspacing="0">
+	<tr>
+		<td class="white_cell"></td>
+		<td>предмети</td>
+		<td>завдання додому</td>
+		<td class="white_cell"></td>
+		<td>предмети</td>
+		<td>завдання додому</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="yellow_cell"></td>
+		<td>Понеділок</td>
+		<td></td>
+		<td class="yellow_cell"></td>
+		<td>Четвер</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2 іноземна</td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td class="settings_is"><span>У мене в понеділок:</span></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Англ. мова</td>
+		<td></td>
+		<td>2</td>
+		<td>Фізкультура</td>
+		<td></td>
+		<td><select id="inf"><option value="first">Інформатика</option><option value="second">Англ. література</option>
+	</select></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Історія України</td>
+		<td></td>
+		<td>3</td>
+		<td>Біологія</td>
+		<td></td>
+	  <td><span>Моя друга іноземна:</span></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Алгебра</td>
+		<td></td>
+		<td>4</td>
+		<td>Фізика</td>
+		<td></td>
+		<td><select id="fremd"><option value="deutsch">Німецька</option><option value="french">Французька</option><option value="polish">Польска</option></select></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Світова</td>
+		<td></td>
+		<td>5</td>
+		<td>Захист. Вітчизни</td>
+		<td></td>
+		<td><button id="savePrefs">Зберегти</button></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Фізика</td>
+		<td></td>
+		<td>6</td>
+		<td>2 іноземна</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Інформатика/Англ. літ.</td>
+		<td></td>
+		<td>7</td>
+		<td>Світова</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td></td>
+		<td></td>
+		<td>8</td>
+		<td>Укр. літ.</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="yellow_cell"></td>
+		<td>Вівторок</td>
+		<td></td>
+		<td class="yellow_cell"></td>
+		<td>П’ятниця</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Тех. пер. / Країнознавство</td>
+		<td></td>
+		<td>1</td>
+		<td>Людина і Світ</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Геометрія</td>
+		<td></td>
+		<td>2</td>
+		<td>Геометрія</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Тех. пер. / Країнознавство</td>
+		<td></td>
+		<td>3</td>
+		<td>Економіка</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Англ. мова</td>
+		<td></td>
+		<td>4</td>
+		<td>Астрономія</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Хімія</td>
+		<td></td>
+		<td>5</td>
+		<td>Англ. мова</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Укр. мова.</td>
+		<td></td>
+		<td>6</td>
+		<td>2 іноземна</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Укр. літ.</td>
+		<td></td>
+		<td>7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Технології</td>
+		<td></td>
+		<td>8</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="yellow_cell"></td>
+		<td>Середа</td>
+		<td></td>
+		<td class="yellow_cell"></td>
+		<td>Субота</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Укр. мова</td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Фізкультура</td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Всесвітня Іст.</td>
+		<td></td>
+		<td>3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Алгебра</td>
+		<td></td>
+		<td>4</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Англ. мова</td>
+		<td></td>
+		<td>5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Англ. мова</td>
+		<td></td>
+		<td>6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Інформат. / Англ. літ.</td>
+		<td></td>
+		<td>7</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Біологія</td>
+		<td></td>
+		<td>8</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46344654-5', '11клас.рф');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-46344654-5']);
+_gaq.push(['_trackPageview']);
+(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23629369 = new Ya.Metrika({id:23629369, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23629369" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--LiveInternet logo--><a href="http://www.liveinternet.ru/click"
+target="_blank"><img style="float: right;" src="//counter.yadro.ru/logo?27.19"
+title="LiveInternet: показана кількість переглядів і відвідувачів"
+alt="" border="0" width="88" height="120"/></a><!--/LiveInternet-->
+</body>
+</html>

@@ -1,0 +1,114 @@
+@-webkit-keyframes pulse {
+	0% {
+		background-color: SkyBlue;
+		-webkit-transform: skewY(-10deg);
+	}
+	5% {
+		background-color: Violet;
+	}
+	10% {
+		background-color: pink;
+		-webkit-transform: skewY(10deg);
+	}
+	15% {
+		background-color: red;
+	}
+	25% {
+		background-color: beige;
+	}
+	35% {
+		background-color: orange;
+	}
+	45% {
+		background-color: brown;
+		-webkit-transform: skewX(-10deg);
+	}
+	50% {
+		background-color: Fleshtone;
+	}
+	65% {
+		background-color: yellow;
+	}
+	75% {
+		background-color: lightblue;
+	}
+	85% {
+		background-color: lightgreen;
+	}
+	100% {
+		background-color: pink;
+		-webkit-transform: skewX(10deg);
+	}
+}
+@-webkit-keyframes color {
+	0% {
+		color: #000;
+		-webkit-transform: translate(25px, 0px);
+	}
+	25% {
+		color: pink;
+		-webkit-transform: translate(25px, -25px);
+	}
+	50% {
+		color: green;
+		-webkit-transform: translate(0px, -25px);
+	}
+	75% {
+		color: yellow;
+		-webkit-transform: translate(0px, 0px);
+		-webkit-transform: scale(1.5);
+	}
+	100% {
+		color: red;
+	}
+}
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(45deg);
+	}
+	25% {
+		-webkit-transform: rotate(90deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	75% {
+		-webkit-transform: rotate(270deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes fly {
+	0% {
+		-webkit-transform: translate(50%, 25%);
+	}
+	25% {
+		-webkit-transform: translate(50%, -50%);
+	}
+	50% {
+		-webkit-transform: translate(25%, -50%);
+	}
+	75% {
+		-webkit-transform: translate(25%, 25%);
+	}
+	100% {
+		-webkit-transform: translate(50%, 25%);
+	}
+}
+body {
+	background-color: #45CEEF;
+	-webkit-animation: pulse .5s infinite alternate;
+	text-align: center;
+}
+h1, h2 {
+	font-size: 52pt;
+	font-family: Arial;
+	-webkit-animation: color .5s infinite;
+}
+h2 {
+	-webkit-animation: color .8s infinite;
+}
+img {
+	-webkit-animation: rotate .8s infinite;
+}
